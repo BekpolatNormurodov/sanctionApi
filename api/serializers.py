@@ -4,4 +4,4 @@ from api.models import *
 class Testserializer(serializers.ModelSerializer):
     class Meta:
         model = Test
-        fields = ('id','title')
+        fields = ('id','title', 'logo', 'pdf')
