@@ -3,15 +3,14 @@ from api.models import *
 from .serializers import *
 from rest_framework.generics import *
 
-# Test Api
-class TestApiView(ListAPIView):
-    queryset = Test.objects.all()
-    serializer_class = Testserializer
+class SanctionApiView(ListAPIView):
+    queryset = Sanction.objects.all()
+    serializer_class = Sanctionserializer
 
-class TestApiCreate(ListCreateAPIView):
-    queryset = Test.objects.all()
-    serializer_class = Testserializer
+class SanctionApiCreate(ListCreateAPIView):
+    queryset = Sanction.objects.all()
+    serializer_class = Sanctionserializer
 
-class TestApiUpdate(RetrieveUpdateDestroyAPIView):
-    queryset = Test.objects.all()
-    serializer_class = Testserializer
+class SanctionApiUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = Sanction.objects.all()
+    serializer_class = Sanctionserializer

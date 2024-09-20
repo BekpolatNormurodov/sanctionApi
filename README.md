@@ -1,2 +1,0 @@
-# sanctionApi
-API for Sanction

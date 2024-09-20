@@ -2,12 +2,12 @@ from rest_framework import serializers
 from api.models import *
 from config import settings
 
-class Testserializer(serializers.ModelSerializer):
+class Sanctionserializer(serializers.ModelSerializer):
     pdf_url = serializers.SerializerMethodField(required=False)
 
     class Meta:
-        model = Test
-        fields = ('id','title', 'logo', 'pdf', 'pdf_url')
+        model = Sanction
+        fields = ('id','title', 'pdf', 'pdf_url')
 
     def get_pdf_url(self, obj):
         if obj.pdf:

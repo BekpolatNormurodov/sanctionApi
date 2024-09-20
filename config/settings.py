@@ -103,9 +103,9 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Images
+# Pdf
 STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
+MEDIA_URL = '/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
