@@ -7,7 +7,7 @@ class Sanctionserializer(serializers.ModelSerializer):
 
     class Meta:
         model = Sanction
-        fields = ('id','title', 'date', 'region', 'shakl1', 'pdf', 'pdf_url')
+        fields = ('id', 'date', 'region', 'shakl1', 'pdf', 'pdf_url')
 
     def get_pdf_url(self, obj):
         if obj.pdf:
