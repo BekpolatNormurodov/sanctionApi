@@ -23,7 +23,7 @@ class SanctionIIBserializer(serializers.ModelSerializer):
     pdf_url = serializers.SerializerMethodField(required=False)
 
     class Meta:
-        model = SanctionOper
+        model = SanctionIIB
         fields = ('id', 'date', 'region', 'shakl1', 'pdf', 'pdf_url')
 
     def get_pdf_url(self, obj):
