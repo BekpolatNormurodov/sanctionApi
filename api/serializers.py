@@ -26,9 +26,9 @@ class SanctionIIBserializer(serializers.ModelSerializer):
         model = SanctionIIB
         fields = ('id', 'date', 'region', 'shakl1', 'pdf', 'pdf_url')
 
-    def get_pdf_url(self, obj):
-        if obj.pdf:
-            pdf_url = f"{settings.MEDIA_URL}{obj.pdf}"
-            pdf_fied_url = f"{settings.BASE_URL}/sanctionApi{pdf_url}"
-            return pdf_fied_url
-        return None
+    # def get_pdf_url(self, obj):
+    #     if obj.pdf:
+    #         pdf_url = f"{settings.MEDIA_URL}{obj.pdf}"
+    #         pdf_fied_url = f"{settings.BASE_URL}/sanctionApi{pdf_url}"
+    #         return pdf_fied_url
+    #     return None
