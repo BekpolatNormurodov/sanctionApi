@@ -8,7 +8,7 @@ urlpatterns = [
     path('<int:pk>',SanctionOperUpdate.as_view()),
 
     # IIB
-    path('iib/',SanctionIIBView.as_view()),
-    path('iib/create/',SanctionIIBCreate.as_view()),
-    path('iib/<int:pk>',SanctionIIBUpdate.as_view()),
+    # path('iib/',SanctionIIBView.as_view()),
+    # path('iib/create/',SanctionIIBCreate.as_view()),
+    # path('iib/<int:pk>',SanctionIIBUpdate.as_view()),
 ]

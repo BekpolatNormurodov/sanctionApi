@@ -19,14 +19,14 @@ class SanctionOperUpdate(RetrieveUpdateDestroyAPIView):
 
 
 # IIB
-class SanctionIIBView(ListAPIView):
-    queryset = SanctionIIB.objects.all()
-    serializer_class = SanctionIIBserializer
+# class SanctionIIBView(ListAPIView):
+#     queryset = SanctionIIB.objects.all()
+#     serializer_class = SanctionIIBserializer
 
-class SanctionIIBCreate(ListCreateAPIView):
-    queryset = SanctionIIB.objects.all()
-    serializer_class = SanctionIIBserializer
+# class SanctionIIBCreate(ListCreateAPIView):
+#     queryset = SanctionIIB.objects.all()
+#     serializer_class = SanctionIIBserializer
 
-class SanctionIIBUpdate(RetrieveUpdateDestroyAPIView):
-    queryset = SanctionIIB.objects.all()
-    serializer_class = SanctionIIBserializer
+# class SanctionIIBUpdate(RetrieveUpdateDestroyAPIView):
+#     queryset = SanctionIIB.objects.all()
+#     serializer_class = SanctionIIBserializer
