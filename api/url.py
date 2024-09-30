@@ -3,7 +3,7 @@ from .views import *
 
 urlpatterns = [
     # Oper
-    path('',SanctionOperView.as_view()),
+    path('oper/',SanctionOperView.as_view()),
     path('create/',SanctionOperCreate.as_view()),
     path('<int:pk>',SanctionOperUpdate.as_view()),
 
