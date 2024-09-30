@@ -3,14 +3,30 @@ from api.models import *
 from .serializers import *
 from rest_framework.generics import *
 
-class SanctionApiView(ListAPIView):
-    queryset = Sanction.objects.all()
-    serializer_class = Sanctionserializer
 
-class SanctionApiCreate(ListCreateAPIView):
-    queryset = Sanction.objects.all()
-    serializer_class = Sanctionserializer
+# Oper
+class SanctionOperView(ListAPIView):
+    queryset = SanctionOper.objects.all()
+    serializer_class = SanctionOperserializer
 
-class SanctionApiUpdate(RetrieveUpdateDestroyAPIView):
-    queryset = Sanction.objects.all()
-    serializer_class = Sanctionserializer
+class SanctionOperCreate(ListCreateAPIView):
+    queryset = SanctionOper.objects.all()
+    serializer_class = SanctionOperserializer
+
+class SanctionOperUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = SanctionOper.objects.all()
+    serializer_class = SanctionOperserializer
+
+
+# IIB
+class SanctionIIBView(ListAPIView):
+    queryset = SanctionIIB.objects.all()
+    serializer_class = SanctionIIBserializer
+
+class SanctionIIBCreate(ListCreateAPIView):
+    queryset = SanctionIIB.objects.all()
+    serializer_class = SanctionIIBserializer
+
+class SanctionIIBUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = SanctionIIB.objects.all()
+    serializer_class = SanctionIIBserializer
