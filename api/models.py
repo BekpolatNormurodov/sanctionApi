@@ -16,8 +16,8 @@ class SanctionOper(models.Model):
 # IIB
 class SanctionIIB(models.Model):
     date = models.DateField(default=date.today)
-    region = models.CharField(max_length=50, null=True)
     hackType = models.CharField(max_length=50, null=True)
+    region = models.CharField(max_length=50, null=True)
     shakl1 = models.CharField(max_length=10, null=True)
     pdf = models.FileField(upload_to='pdf/iib/', null=True)
 
@@ -27,8 +27,8 @@ class SanctionIIB(models.Model):
 # Prokuratura
 class SanctionProkuratura(models.Model):
     date = models.DateField(default=date.today)
-    region = models.CharField(max_length=50, null=True)
     hackType = models.CharField(max_length=50, null=True)
+    region = models.CharField(max_length=50, null=True)
     shakl1 = models.CharField(max_length=10, null=True)
     pdf = models.FileField(upload_to='pdf/prokuratura/', null=True)
 
