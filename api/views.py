@@ -30,3 +30,17 @@ class SanctionIIBCreate(ListCreateAPIView):
 class SanctionIIBUpdate(RetrieveUpdateDestroyAPIView):
     queryset = SanctionIIB.objects.all()
     serializer_class = SanctionIIBserializer
+
+
+# Prokuratura
+class SanctionProkuraturaView(ListAPIView):
+    queryset = SanctionProkuratura.objects.all()
+    serializer_class = SanctionProkuraturaserializer
+
+class SanctionProkuraturaCreate(ListCreateAPIView):
+    queryset = SanctionProkuratura.objects.all()
+    serializer_class = SanctionProkuraturaserializer
+
+class SanctionProkuraturaUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = SanctionProkuratura.objects.all()
+    serializer_class = SanctionProkuraturaserializer
