@@ -13,7 +13,7 @@ urlpatterns = [
     path('iib/<int:pk>',SanctionIIBUpdate.as_view()),
 
     # Prokuratura
-    path('iib/',SanctionProkuraturaView.as_view()),
-    path('iib/create/',SanctionProkuraturaCreate.as_view()),
-    path('iib/<int:pk>',SanctionProkuraturaUpdate.as_view()),
+    path('prokuratura/',SanctionProkuraturaView.as_view()),
+    path('prokuratura/create/',SanctionProkuraturaCreate.as_view()),
+    path('prokuratura/<int:pk>',SanctionProkuraturaUpdate.as_view()),
 ]
