@@ -8,7 +8,7 @@ urlpatterns = [
     path('<int:pk>',SanctionOperUpdate.as_view()),
 
     # Oper Star
-    path('star',SanctionOperView.as_view()),
+    path('star/',SanctionOperView.as_view()),
     path('star/create/',SanctionOperCreate.as_view()),
     path('star/<int:pk>',SanctionOperUpdate.as_view()),
 
