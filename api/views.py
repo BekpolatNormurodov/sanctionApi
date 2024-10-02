@@ -18,6 +18,20 @@ class SanctionOperUpdate(RetrieveUpdateDestroyAPIView):
     serializer_class = SanctionOperserializer
 
 
+# Oper Star
+class SanctionStarView(ListAPIView):
+    queryset = SanctionStar.objects.all()
+    serializer_class = SanctionStarserializer
+
+class SanctionStarCreate(ListCreateAPIView):
+    queryset = SanctionStar.objects.all()
+    serializer_class = SanctionStarserializer
+
+class SanctionStarUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = SanctionStar.objects.all()
+    serializer_class = SanctionStarserializer
+
+
 # IIB
 class SanctionIIBView(ListAPIView):
     queryset = SanctionIIB.objects.all()
