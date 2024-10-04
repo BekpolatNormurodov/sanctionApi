@@ -13,17 +13,6 @@ class SanctionOper(models.Model):
         return self.shakl1[:10]
     
 
-# Oper Star
-class SanctionStar(models.Model):
-    date = models.DateField(default=date.today)
-    hackType = models.CharField(max_length=50, null=True)
-    region = models.CharField(max_length=50, null=True)
-    shakl1 = models.CharField(max_length=10, null=True)
-    pdf = models.FileField(upload_to='pdf/', null=True)
-
-    def __str__(self):
-        return self.shakl1[:10]
-    
 
 # IIB
 class SanctionIIB(models.Model):
@@ -36,6 +25,7 @@ class SanctionIIB(models.Model):
     def __str__(self):
         return self.shakl1[:10]
     
+
 # Prokuratura
 class SanctionProkuratura(models.Model):
     date = models.DateField(default=date.today)
@@ -46,4 +36,12 @@ class SanctionProkuratura(models.Model):
 
     def __str__(self):
         return self.shakl1[:10]
-    
+
+
+# Oper Star
+class SanctionStar(models.Model):
+    region = models.CharField(max_length=50, null=True)
+    shakl1 = models.CharField(max_length=10, null=True)
+
+    def __str__(self):
+        return self.shakl1[:10]

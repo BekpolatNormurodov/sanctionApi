@@ -18,20 +18,6 @@ class SanctionOperUpdate(RetrieveUpdateDestroyAPIView):
     serializer_class = SanctionOperserializer
 
 
-# Oper Star
-class SanctionStarView(ListAPIView):
-    queryset = SanctionStar.objects.all()
-    serializer_class = SanctionStarserializer
-
-class SanctionStarCreate(ListCreateAPIView):
-    queryset = SanctionStar.objects.all()
-    serializer_class = SanctionStarserializer
-
-class SanctionStarUpdate(RetrieveUpdateDestroyAPIView):
-    queryset = SanctionStar.objects.all()
-    serializer_class = SanctionStarserializer
-
-
 # IIB
 class SanctionIIBView(ListAPIView):
     queryset = SanctionIIB.objects.all()
@@ -46,6 +32,7 @@ class SanctionIIBUpdate(RetrieveUpdateDestroyAPIView):
     serializer_class = SanctionIIBserializer
 
 
+
 # Prokuratura
 class SanctionProkuraturaView(ListAPIView):
     queryset = SanctionProkuratura.objects.all()
@@ -57,4 +44,18 @@ class SanctionProkuraturaCreate(ListCreateAPIView):
 
 class SanctionProkuraturaUpdate(RetrieveUpdateDestroyAPIView):
     queryset = SanctionProkuratura.objects.all()
+
+
+# Oper Star
+class SanctionStarView(ListAPIView):
+    queryset = SanctionStar.objects.all()
+    serializer_class = SanctionStarserializer
+
+class SanctionStarCreate(ListCreateAPIView):
+    queryset = SanctionStar.objects.all()
+    serializer_class = SanctionStarserializer
+
+class SanctionStarUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = SanctionStar.objects.all()
+    serializer_class = SanctionStarserializer
     serializer_class = SanctionProkuraturaserializer
