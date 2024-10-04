@@ -40,8 +40,7 @@ class SanctionProkuratura(models.Model):
 
 # Oper Star
 class SanctionStar(models.Model):
-    region = models.CharField(max_length=50, null=True)
-    shakl1 = models.CharField(max_length=10, null=True)
+    starId = models.IntegerField(null=True)
 
     def __str__(self):
-        return self.shakl1[:10]
+        return self.starId[:10]

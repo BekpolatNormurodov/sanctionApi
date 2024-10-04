@@ -59,4 +59,4 @@ class SanctionStarserializer(serializers.ModelSerializer):
 
     class Meta:
         model = SanctionStar
-        fields = ('id', 'region', 'shakl1')
+        fields = ('id', 'starId')
