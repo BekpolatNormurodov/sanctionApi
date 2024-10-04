@@ -56,7 +56,6 @@ class SanctionProkuraturaserializer(serializers.ModelSerializer):
 
 # Star
 class SanctionStarserializer(serializers.ModelSerializer):
-    pdf_url = serializers.SerializerMethodField(required=False)
 
     class Meta:
         model = SanctionStar
