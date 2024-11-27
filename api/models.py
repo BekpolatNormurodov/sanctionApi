@@ -8,7 +8,17 @@ class SanctionOper(models.Model):
     region = models.CharField(max_length=50, null=True)
     shakl1 = models.CharField(max_length=10, null=True)
     pdf = models.FileField(upload_to='pdf/', null=True)
-    pdf_2 = models.FileField(upload_to='pdf/', null=True)
+
+
+    def __str__(self):
+        return self.shakl1[:10]
+    
+class SanctionSigned(models.Model):
+    date = models.DateField(default=date.today)
+    hackType = models.CharField(max_length=50, null=True)
+    region = models.CharField(max_length=50, null=True)
+    shakl1 = models.CharField(max_length=10, null=True)
+    pdf = models.FileField(upload_to='pdf/', null=True)
 
 
     def __str__(self):
@@ -23,7 +33,6 @@ class SanctionIIB(models.Model):
     region = models.CharField(max_length=50, null=True)
     shakl1 = models.CharField(max_length=10, null=True)
     pdf = models.FileField(upload_to='pdf/iib/', null=True)
-    pdf_2 = models.FileField(upload_to='pdf/iib/', null=True)
 
     def __str__(self):
         return self.shakl1[:10]
@@ -36,7 +45,6 @@ class SanctionProkuratura(models.Model):
     region = models.CharField(max_length=50, null=True)
     shakl1 = models.CharField(max_length=10, null=True)
     pdf = models.FileField(upload_to='pdf/prokuratura/', null=True)
-    pdf_2 = models.FileField(upload_to='pdf/prokuratura/', null=True)
 
     def __str__(self):
         return self.shakl1[:10]

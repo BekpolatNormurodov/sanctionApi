@@ -7,6 +7,11 @@ urlpatterns = [
     path('create/',SanctionOperCreate.as_view()),
     path('<int:pk>',SanctionOperUpdate.as_view()),
 
+     # Oper Signed
+    path('signed/',SanctionSignedView.as_view()),
+    path('signed/create/',SanctionSignedCreate.as_view()),
+    path('signed/<int:pk>',SanctionSignedUpdate.as_view()),
+
     # IIB
     path('iib/',SanctionIIBView.as_view()),
     path('iib/create/',SanctionIIBCreate.as_view()),

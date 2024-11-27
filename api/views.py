@@ -17,6 +17,19 @@ class SanctionOperUpdate(RetrieveUpdateDestroyAPIView):
     queryset = SanctionOper.objects.all()
     serializer_class = SanctionOperserializer
 
+# Oper Signed
+class SanctionSignedView(ListAPIView):
+    queryset = SanctionSigned.objects.all()
+    serializer_class = SanctionSignedserializer
+
+class SanctionSignedCreate(ListCreateAPIView):
+    queryset = SanctionSigned.objects.all()
+    serializer_class = SanctionSignedserializer
+
+class SanctionSignedUpdate(RetrieveUpdateDestroyAPIView):
+    queryset = SanctionSigned.objects.all()
+    serializer_class = SanctionSignedserializer
+
 
 # IIB
 class SanctionIIBView(ListAPIView):
